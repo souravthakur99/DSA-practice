@@ -12,6 +12,7 @@ class MyQueue {
     
     public int pop() {
         if(output.isEmpty()){
+            //agar outputstackjo kee queue ke tarah hai agar wo empty hua too all the elements from inout again will be pushed and then same operation
             while(!input.isEmpty()){
                 output.push(input.pop());
             }
